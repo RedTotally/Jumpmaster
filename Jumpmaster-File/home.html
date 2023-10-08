@@ -4,82 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Jumpmaster | Jumpscare</title>
+
+    <!--Meta-->
+<meta name="description" content="Our website uses Google Ads as a middle-man to show advertisements. However, your privacy concerns matter to us. Therefore, your consent to the GDPR policy (General Data Protection Regulation) gives us permission to show advertisements on our website to you. Press the “Accept” button underneath to start the journey of accessing our website!"/>
 </head>
 
-<body id="body" class="jason">
+<body id="body" class="jumpscare-body">
 
-    <audio class="audio" controls autoplay loop>
-        <source src="audios/jumpscare_test.mp3" type="audio/ogg">
-    </audio>
+<!--AudioSection-->
+<audio class="audio" controls autoplay loop>
+     <source src="audios/jumpscare_test.mp3" type="audio/ogg">
+</audio>
+<!--EndofSection-->
 
-    <script>
-
+<!--ScriptSection-->
+<script>
 var background = document.getElementById('body');
 
-        function flashinggone() {
-  for (let i = 0; i <= 100; i++) {
-    setTimeout(function() {
-        background.style.backgroundImage = 'url()';
-    }, i * 100); 
-  }
+var firstImage = 'url(images/jumpscare.png)'
+var secondImage = 'url(images/jumpscare-2.png)'
+var thirdImage = 'url(images/jumpscare-3.png)'
+
+var rate1 = 100
+var rate2 = 200
+var rate3 = 300
+var rate4 = 400
+
+function flashinggone() {
+for (let i = 0; i <= 100; i++) {
+setTimeout(function() {
+background.style.backgroundImage = 'url()';
+}, i * rate1); 
+}
 }
 
 function flashingshow() {
-  for (let i = 0; i <= 100; i++) {
-    setTimeout(function() {
+for (let i = 0; i <= 100; i++) {
+setTimeout(function() {
 
-      var math = Math.floor(Math.random() * 3);
+var math = Math.floor(Math.random() * 3);
 
-        if(math == 1){
-          background.style.backgroundImage = 'url(images/jumpscare.png)';
-        }else if(math == 2){
-          background.style.backgroundImage = 'url(images/jumpscare-2.png)';
-        }else{
-          background.style.backgroundImage = 'url(images/jumpscare-3.png)';
-        }
-    }, i * 200); 
-  }
+if(math == 1){
+  background.style.backgroundImage = firstImage;
+}else if(math == 2){
+  background.style.backgroundImage = secondImage;
+}else{
+  background.style.backgroundImage = thirdImage;
+}
+}, i * rate2); 
+}
 }
 
 function flashingshow2() {
-  for (let i = 0; i <= 100; i++) {
-    setTimeout(function() {
-      var math = Math.floor(Math.random() * 3);
+for (let i = 0; i <= 100; i++) {
+setTimeout(function() {
+var math = Math.floor(Math.random() * 3);
 
-        if(math == 1){
-          background.style.backgroundImage = 'url(images/jumpscare.png)';
-        }else if(math == 2){
-          background.style.backgroundImage = 'url(images/jumpscare-2.png)';
-        }else{
-          background.style.backgroundImage = 'url(images/jumpscare-3.png)';
-        }
-    }, i * 300); 
-  }
+if(math == 1){
+  background.style.backgroundImage = firstImage;
+}else if(math == 2){
+  background.style.backgroundImage = secondImage;
+}else{
+  background.style.backgroundImage = thirdImage;
+}
+}, i * rate3); 
+}
 }
 
 function flashingshow3() {
-  for (let i = 0; i <= 100; i++) {
-    setTimeout(function() {
-      var math = Math.floor(Math.random() * 3);
+for (let i = 0; i <= 100; i++) {
+setTimeout(function() {
+var math = Math.floor(Math.random() * 3);
 
-        if(math == 1){
-          background.style.backgroundImage = 'url(images/jumpscare.png)';
-        }else if(math == 2){
-          background.style.backgroundImage = 'url(images/jumpscare-2.png)';
-        }else{
-          background.style.backgroundImage = 'url(images/jumpscare-3.png)';
-        }
-    }, i * 400); 
-  }
+if(math == 1){
+  background.style.backgroundImage = firstImage;
+}else if(math == 2){
+  background.style.backgroundImage = secondImage;
+}else{
+  background.style.backgroundImage = thirdImage;
+}
+}, i * rate4); 
+}
 }
 
 flashinggone();
 flashingshow();
 flashingshow2();
 flashingshow3();
-
-    </script>
+</script>
+<!--EndofSection-->
 
 </body>
 
