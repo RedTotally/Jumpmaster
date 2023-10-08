@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jumpmaster | Jumpscare</title>
+</head>
+
+<body id="body" class="jason">
+
+    <audio class="audio" controls autoplay loop>
+        <source src="audios/jumpscare_test.mp3" type="audio/ogg">
+    </audio>
+
+    <script>
+
+var background = document.getElementById('body');
+
+        function flashinggone() {
+  for (let i = 0; i <= 100; i++) {
+    setTimeout(function() {
+        background.style.backgroundImage = 'url()';
+    }, i * 100); 
+  }
+}
+
+function flashingshow() {
+  for (let i = 0; i <= 100; i++) {
+    setTimeout(function() {
+
+      var math = Math.floor(Math.random() * 3);
+
+        if(math == 1){
+          background.style.backgroundImage = 'url(images/jumpscare.png)';
+        }else if(math == 2){
+          background.style.backgroundImage = 'url(images/jumpscare-2.png)';
+        }else{
+          background.style.backgroundImage = 'url(images/jumpscare-3.png)';
+        }
+    }, i * 200); 
+  }
+}
+
+function flashingshow2() {
+  for (let i = 0; i <= 100; i++) {
+    setTimeout(function() {
+      var math = Math.floor(Math.random() * 3);
+
+        if(math == 1){
+          background.style.backgroundImage = 'url(images/jumpscare.png)';
+        }else if(math == 2){
+          background.style.backgroundImage = 'url(images/jumpscare-2.png)';
+        }else{
+          background.style.backgroundImage = 'url(images/jumpscare-3.png)';
+        }
+    }, i * 300); 
+  }
+}
+
+function flashingshow3() {
+  for (let i = 0; i <= 100; i++) {
+    setTimeout(function() {
+      var math = Math.floor(Math.random() * 3);
+
+        if(math == 1){
+          background.style.backgroundImage = 'url(images/jumpscare.png)';
+        }else if(math == 2){
+          background.style.backgroundImage = 'url(images/jumpscare-2.png)';
+        }else{
+          background.style.backgroundImage = 'url(images/jumpscare-3.png)';
+        }
+    }, i * 400); 
+  }
+}
+
+flashinggone();
+flashingshow();
+flashingshow2();
+flashingshow3();
+
+    </script>
+
+</body>
+
+</html>
