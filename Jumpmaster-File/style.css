@@ -34,7 +34,7 @@ body{
     cursor: pointer;
     padding: 1em 2em;
     background-color: #534686;
-    color: white;
+    color: #ffffff;
     transition: .5s;
 }
 
@@ -46,7 +46,7 @@ body{
     cursor: pointer;
     margin-left: 2em;
     text-decoration: underline;
-    color: rgb(73, 73, 73);
+    color: #494949;
 }
 
 footer{
@@ -56,7 +56,7 @@ margin-top: 20em;
 margin-bottom: 5em;
 }
 
-.jason{
+.jumpscare-body{
     background-image: url(images/jumpscare.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
